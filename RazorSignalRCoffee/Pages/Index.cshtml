@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to our Coffee Shop</h1>
+    <a class="btn btn-primary" asp-area="" asp-page="/CoffeePage/Index">Access the Coffee Management</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+<script src="~/js/site.js"></script>  <!-- Ensure site.js loads after SignalR -->
